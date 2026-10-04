@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">隔空滑屏</string>
+    <string name="accessibility_desc">配合前置摄像头识别到的挥手动作，在当前 App 中模拟上下滑动屏幕。本服务不读取任何屏幕内容。</string>
+</resources>

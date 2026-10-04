@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隔空滑屏"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="用前置摄像头识别手势：在镜头前向上挥手，就会自动上滑屏幕（刷到下一个视频）。"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="6dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/permissionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="① 授予摄像头和通知权限" />
+
+        <Button
+            android:id="@+id/accessibilityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="② 去开启无障碍服务" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在无障碍列表里找到“隔空滑屏”并打开。如果开关是灰色、点不了，先点下面的按钮，进入应用详情 → 右上角 ⋮ → “允许受限制的设置”，再回来开启。"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/appInfoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开应用详情（受限设置 / 后台运行）" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="③ 开始识别"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sensitivityLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/sensitivitySeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="9" />
+
+        <Switch
+            android:id="@+id/onlyUpSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="只响应向上挥手（推荐：避免收手时误触回到上一个）" />
+
+        <Switch
+            android:id="@+id/invertSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="方向反了？打开这个反转" />
+
+        <TextView
+            android:id="@+id/motionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#14000000"
+            android:lineSpacingExtra="4dp"
+            android:padding="12dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="4dp"
+            android:text="使用技巧\n• 手掌离屏幕 20–40 厘米，从下往上快速挥过前置摄像头。\n• 开始识别后，可以先在本页面试挥手，看“上次识别”有没有变化。\n• 光线越充足越准；太暗时容易没反应。\n• 一加 / ColorOS 会清理后台：请在应用详情 → 耗电管理里允许后台运行，并在最近任务里锁定本 App。\n• 屏幕关闭时会自动关掉摄像头，解锁后自动恢复。\n• 本 App 没有联网权限，画面只在内存里比较，不保存、不上传。"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
